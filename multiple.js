@@ -49,7 +49,7 @@ p.appendChild(editBtn);
       inputfname: fname,  
       inputlname: lname
   };    
-  axios.post("https://crudcrud.com/api/5d8ea0b0a7cf4c22bbe18d124bbf3e4b/appoimentData",obj)
+  axios.get("https://crudcrud.com/api/5d8ea0b0a7cf4c22bbe18d124bbf3e4b/appoimentData",obj)
       .then((response)=>{
         console.log(response)
       })
