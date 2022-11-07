@@ -49,7 +49,13 @@ p.appendChild(editBtn);
       inputfname: fname,  
       inputlname: lname
   };    
-  
+  axios.post("https://crudcrud.com/api/5d8ea0b0a7cf4c22bbe18d124bbf3e4b/appoimentData",obj)
+      .then((response)=>{
+        console.log(response)
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
   let myobj_serialized = JSON.stringify(myObj); 
   localStorage.setItem(myObj.inputfname,myobj_serialized); 
   let myObj_deserialized = JSON.parse(localStorage.getItem(myObj.inputfname));  
