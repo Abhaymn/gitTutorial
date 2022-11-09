@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: small;
+}
+
+body {
+ 
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+#totalExpense {
+  font-size: x-large;
+}
+
+#btn {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+ 
+ 
+  font-weight: 700;
+  padding: 10px;
+}
+
+.input label {
+  font-size: small;
+  font-weight: 700;
+}
+
+.input {
+  margin: 20px 0px;
+}
+
+#expenseCard {
+  min-width: 70%;
+  display: flex;
+  justify-content: space-around;
+ 
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+}
+
+#expenseItem {
+  color: rgb(9, 8, 8);
+  text-transform: capitalize;
+}
+
+#deleteIcon {
+  
+  width: 25px;
+  height: 25px;
+}
+
+
+
