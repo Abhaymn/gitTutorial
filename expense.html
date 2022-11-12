@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="An expense tracker built using vanilla javascript to track your expenses dynamically"
-    />
-    <meta name="keywords" content="expense tracker app" />
-    <meta name="author" content="M.V.Ganesh Kumar" />
-    <title>Expense Tracker</title>
-    <link rel="icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-   
-      <h1 id="totalExpense">Total Expense</h1>
-      <div class="input">
-        <label for="expenseType"> Enter your expense type</label>
-        <input id="expenseType" type="text" />
-      </div>
-      <div class="input">
-        <label for="amount"> Enter the amount</label>
-        <input id="amount" type="text" />
-      </div>
-      <button id="btn">Enter</button>
-     
-    </div>
-   
-    <script src="script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body class="content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="tracker.js"></script>
+        <div class="middle">
+            <h2 class="txt" id="txth" >Expense Tracker</h2>
+            <form action="#" onsubmit="saveToLocalStorage(event)">
+                <label>Choose expense amount :</label>
+                <input id="amt" class="frm" type="number"  name="amount" required>
+                <label>Choose description :</label>
+                <input id="des" class="frm" type="text"  name="description" required>
+                <label for="categeory">Choose a categeory:</label>
+                <select name="categeory" id="categeory">
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="movie">Movie</option>
+                </select>
+                <button> Add Expense </button>
+            </form>
+            <ul id="listOfUsers"></ul>
+
+        </div>       
+</body>
 </html>
